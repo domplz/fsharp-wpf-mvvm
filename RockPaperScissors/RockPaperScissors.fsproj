@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net472</TargetFramework> 
+
+    <WarnOn>3390;$(WarnOn)</WarnOn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="ViewModels\Command.fs" />
+    <Compile Include="ViewModels\ViewModelBase.fs" />
+    <Compile Include="ViewModels\MainWindowViewModel.fs" />
+    <Resource Include="MainWindow.xaml">
+      <Generator></Generator>
+    </Resource>
+    <Compile Include="App.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FsXaml.Wpf" Version="3.1.6" />
+  </ItemGroup>
+</Project>
